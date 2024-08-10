@@ -7,6 +7,7 @@ import img7 from '../../assest/work/imge/img7.jpg'
 import img8 from '../../assest/work/imge/img8.jpg'
 import img9 from '../../assest/work/imge/img9.jpg'
 import img10 from '../../assest/work/imge/img10.jpg'
+import Home3 from '../Homepage/Home3';
 
 
 function Work3() {
@@ -112,6 +113,7 @@ function Work3() {
             </Grid>
        </Grid>
 </Container>
+      <Home3/>
 
 </Box>
 

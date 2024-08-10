@@ -12,32 +12,32 @@ function Home3() {
            <Box py={5}>
             <Grid container item spacing={0} xs={12}>
               <Grid item xs={12} sm={6} lg={2}>
-                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                    <img src={home3} />
                  </Box>  
               </Grid>
               <Grid item xs={12} sm={6} lg={2}>
-               <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+               <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                    <img src={home4} /> 
                  </Box>
               </Grid>
               <Grid item xs={12} sm={6} lg={2}>
-                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                    <img src={home5} />
                    </Box>  
               </Grid>
               <Grid item xs={12} sm={6} lg={2}>
-                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                    <img src={home6} /> 
                </Box>
               </Grid>
               <Grid item xs={12} sm={6} lg={2}>
-                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                    <img src={home3} />
                  </Box>
               </Grid>
               <Grid item xs={12} sm={6} lg={2}>
-                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3}>
+                 <Box sx={{bgcolor:"white",border:"1px solid #F2F2F2","&:hover":{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}} py={3} px={3}>
                     <img src={home4} />
                  </Box>
               </Grid>
