@@ -5,8 +5,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
+
+  const navigate= useNavigate();
   return (
     <Box bgcolor={"black"}>
         <Container maxWidth="lg">
@@ -31,11 +34,11 @@ function Footer() {
                     <Typography sx={{fontSize:"24px",fontFamily:"Poppins, sans-serif",color:"white"}}>Quick Link</Typography>
                   </Box>
                   <Box py={5}>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Home</Typography>
-                    <Typography  sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>About Us</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Our Work</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Our Services</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Contact Us</Typography>
+                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/")}>Home</Typography>
+                    <Typography  sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() =>navigate("/About")}>About Us</Typography>
+                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/works")}>Our Work</Typography>
+                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Services")}>Our Services</Typography>
+                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Contact")}>Contact Us</Typography>
                     <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Get A Quote</Typography>
                   </Box>
                 </Box>

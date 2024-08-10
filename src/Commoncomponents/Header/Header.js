@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import logo from '../../Assets/home/logo.png'; // Update the path to your logo
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -20,6 +21,8 @@ function Header() {
   const handleHomeMenuClose = () => {
     setAnchorElHome(null);
   };
+
+  const navigate = useNavigate();
 
   const menuItems = ['Works', 'Services', 'About', 'Contact'];
 
@@ -64,7 +67,7 @@ function Header() {
 
           {/* Desktop Menu */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: '20px' }}>
-            <Typography sx={{ color: 'white', cursor: 'pointer' }} onClick={handleHomeClick}>
+            <Typography onClick={() => navigate("/")} sx={{ color: '#EDEDED', cursor: 'pointer' }} >
               Home  <ExpandMoreIcon />
             </Typography>
             <Menu
@@ -78,11 +81,11 @@ function Header() {
               <MenuItem onClick={handleHomeMenuClose}>Home-Light</MenuItem>
               <MenuItem onClick={handleHomeMenuClose}>Home-Dark</MenuItem>
             </Menu>
-            <Typography sx={{ color: 'white', cursor: 'pointer' }}>Works</Typography>
-            <Typography sx={{ color: 'white', cursor: 'pointer' }}>Services</Typography>
-            <Typography sx={{ color: 'white', cursor: 'pointer' }}>About Us</Typography>
-            <Typography sx={{ color: 'white', cursor: 'pointer' }}>Contact Us</Typography>
-            <Button sx={{ bgcolor: 'white', color: 'black', borderRadius: '5px' }}>Get A Quote</Button>
+            <Typography onClick={() => navigate("/works")} sx={{ color: '#EDEDED', cursor: 'pointer' }}>Works</Typography>
+            <Typography onClick={() => navigate("/Services")}sx={{ color: '#EDEDED', cursor: 'pointer' }}>Services</Typography>
+            <Typography onClick={() =>navigate("/About")}sx={{ color: '#EDEDED', cursor: 'pointer' }}>About Us</Typography>
+            <Typography onClick={() => navigate("/Contact")}sx={{ color: '#EDEDED', cursor: 'pointer' }}>Contact Us</Typography>
+            <Button sx={{ bgcolor: '#EDEDED', color: 'black', borderRadius: '5px' ,fontSize:"12px",fontFamily:"poppins,sans-serif",fontWeight:"600",letterSpacing:"1px",px:"20px"}}>Get A Quote</Button>
           </Box>
 
           {/* Mobile Menu */}

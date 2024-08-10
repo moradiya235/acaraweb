@@ -51,9 +51,9 @@ function About3() {
                 {data.map((item,index) =>(
                     <Grid item xs={12} sm={4}>
                         <Box textAlign={"start"} sx={{"&:hover":{backgroundColor:"#F2F2F2"}}} py={4}>
-                            <Typography sx={{fontSize:"13px",fontWeight:"600",fontFamily:"Poppins, sans-serif",color:"#E2564D",letterSpacing:"2px",py:"8px",paddingLeft:"12px"}}>{item.number}</Typography>
-                            <Typography sx={{fontSize:"20px",fontWeight:"600",fontFamily:"Poppins, sans-serif",borderLeft:"2px solid #E2564D",paddingLeft:"12px"}}>{item.title}</Typography>
-                            <Typography sx={{fontSize:"15px",color:"#5F656C",py:"8px",paddingLeft:"12px"}}>{item.details}</Typography>
+                            <Typography sx={{fontSize:"13px",fontWeight:"600",fontFamily:"Poppins, sans-serif",color:"#E2564D",letterSpacing:"2px",py:"8px",paddingLeft:"15px"}}>{item.number}</Typography>
+                            <Typography sx={{fontSize:"20px",fontWeight:"600",fontFamily:"Poppins, sans-serif",borderLeft:"2px solid #E2564D",paddingLeft:"15px"}}>{item.title}</Typography>
+                            <Typography sx={{fontSize:"15px",color:"#5F656C",py:"8px",paddingLeft:"15px",paddingRight:"20px"}}>{item.details}</Typography>
                         </Box>
                     </Grid>
                 ))}
