@@ -41,10 +41,10 @@ function About3() {
     <Box py={5}>
         <Container maxWidth="lg">
            <Box py={2}>
-              <Typography sx={{fontSize:"32px",fontWeight:"600",fontFamily:"Poppins, sans-serif"}}>Why Choose Us</Typography>
+              <Typography sx={{fontSize:"32px",fontWeight:"600",fontFamily:"Poppins, sans-serif",textAlign:"center"}}>Why Choose Us</Typography>
            </Box>
-           <Box py={2}>
-              <Typography sx={{fontSize:"15px",color:"#5F656C"}}>Lobortis arcu at suspendisse arcu egestas lectus purus magna interdum aliquam scelerisque. </Typography>
+           <Box py={3}>
+              <Typography sx={{fontSize:"15px",color:"#5F656C",textAlign:"center"}}>Lobortis arcu at suspendisse arcu egestas lectus purus magna interdum aliquam scelerisque. </Typography>
            </Box>
            <Box>
               <Grid container item spacing={0} >
