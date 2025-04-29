@@ -3,15 +3,23 @@ import React from 'react'
 import about from '../../Assets/About/About2.jpeg'
 import Sign from '../../Assets/About/About3.png'
 import about4 from '../../Assets/About/About4.jpeg'
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+
 function About2() {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    });
     return (
         <Box py={10}>
             <Container maxWidth="lg">
                 <Box>
                     <Grid container item spacing={0} xs={12}>
                         <Grid item xs={12} sm={6}>
-                            <Box sx={{width:{lg:"70%",sm:"80%",xs:"100%"}}}>
-                                <img src={about} width={"100%"}/>
+                            <Box sx={{ width: { lg: "70%", sm: "80%", xs: "100%" } }}>
+                                <img src={about} width={"100%"} />
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -22,7 +30,7 @@ function About2() {
                             <Box textAlign={"start"} py={3}>
                                 <Typography sx={{ fontSize: "15px", color: "#5F565C", lineHeight: "30px" }}>Ac, dui lectus libero, vulputate diam. Malesuada egestas venenatis vitae hendrerit consectetur imperdiet turpis. Non malesuada id dis sed. Aenean ipsum augue vitae maecenas vitae ante tempus lacinia. Ut vel quisque in varius commodo dui. Eget est cras morbi in facilisi rhoncus, id. Pellentesque augue ullamcorper tristique dui dui, habitant interdum hendrerit pellentesque. Morbi euismod nibh integer pretium nunc facilisis lectus blandit eu. Eget egestas porttitor fusce nibh.</Typography>
                             </Box>
-                            <Box sx={{ display:{lg:"flex",sm:"none"}}} gap={2}>
+                            <Box sx={{ display: { lg: "flex", sm: "none" } }} gap={2}>
                                 <Box>
                                     <img src={Sign} />
                                 </Box>
@@ -36,12 +44,12 @@ function About2() {
                     </Grid>
                 </Box>
                 <Box>
-                    <Grid container item spacing={0} xs={12} sx={{display:"flex", alignItems:"end"}}>
-                        <Grid item xs={12} sm={6}>
+                    <Grid container item spacing={0} xs={12} sx={{ display: "flex", alignItems: "end" }}>
+                        {/* <Grid item xs={12} sm={6}>
                                 <Box sx={{ display: "flex", justifyContent: "center",width:{lg:"70%",sm:"80%",xs:"100%"}}}>
                                   <Box sx={{ bgcolor: "#1a1a1a14", width: "100%", textAlign: "center"}}>
                                     <Box py={3}>
-                                        <Typography fontSize={"30px"} fontWeight={600} color={"#5F656C"}>1994</Typography>
+                                        <Typography fontSize={"30px"} fontWeight={600} color={"#5F656C"} >1994</Typography>
                                         <Typography fontSize={"12px"} letterSpacing={1}>ESTABLISHED</Typography>
                                     </Box>
                                     <Box py={3}>
@@ -61,13 +69,83 @@ function About2() {
                                 </Box>  
                                 </Box>
 
+                        </Grid> */}
+                        <Grid item xs={12} sm={6}>
+                            <Box
+                                ref={ref}
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    width: { lg: "70%", sm: "80%", xs: "100%" },
+                                    // flexWrap: "wrap",
+                                    // gap: 2,
+                                }}
+                            >
+                                {/* First Box */}
+                                <Box
+                                    sx={{
+                                        bgcolor: "#1a1a1a14",
+                                        width: "100%",
+                                        textAlign: "center",
+                                    }}
+                                >
+                                    <Box py={3}>
+                                        <Typography fontSize="30px" fontWeight={600} color="#5F656C">
+                                            {inView && <CountUp end={1994} duration={2} />}
+                                        </Typography>
+                                        <Typography fontSize="12px" letterSpacing={1}>
+                                            ESTABLISHED
+                                        </Typography>
+                                    </Box>
+
+                                    <Box py={3}>
+                                        <Typography fontSize="30px" fontWeight={600} color="#5F656C">
+                                            {inView && <CountUp end={500} duration={2} suffix="+" />}
+                                        </Typography>
+                                        <Typography fontSize="12px" letterSpacing={1}>
+                                            CLIENTS
+                                        </Typography>
+                                    </Box>
+
+
+                                </Box>
+
+                                {/* Second Box */}
+                                <Box
+                                    sx={{
+                                        bgcolor: "#1a1a1a14",
+                                        width: "100%",
+                                        textAlign: "center",
+                                    }}
+                                >
+                                   
+                                    
+                                    <Box py={3}>
+                                        <Typography fontSize="30px" fontWeight={600} color="#5F656C">
+                                            {inView && <CountUp end={100} duration={2} />}
+                                        </Typography>
+                                        <Typography fontSize="12px" letterSpacing={1}>
+                                            EMPLOYEE
+                                        </Typography>
+                                    </Box>
+                                    
+                                   
+                                    <Box py={3}>
+                                        <Typography fontSize="30px" fontWeight={600} color="#5F656C">
+                                            {inView && <CountUp end={9000} duration={2} suffix="+" />}
+                                        </Typography>
+                                        <Typography fontSize="12px" letterSpacing={1}>
+                                            EVENTS
+                                        </Typography>
+                                    </Box>
+                                </Box>
+                            </Box>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <Box>
-                                <img src={about4} style={{width:"100%"}}/>
+                                <img src={about4} style={{ width: "100%" }} />
                             </Box>
                         </Grid>
-
                     </Grid>
                 </Box>
             </Container>

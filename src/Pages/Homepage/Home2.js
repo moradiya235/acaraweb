@@ -19,7 +19,7 @@ function Home2() {
             <Box py={1}>
                 <Typography color={"#5F656C"}>Sit vestibulum nec nam porttitor nibh. Urna at faucibus aliquet dolor. Facilisis id diam pellentesque et odio. Potenti sagittis massa lorem arcu sed diam. Consectetur elit sit in donec vitae blandit tincidunt eu. Sed nulla vel diam commodo. Placerat cursus sed blandit eu odio.</Typography>
             </Box>
-            <Box sx={{display:"flex",justifyContent:"center"}}>
+            <Box sx={{display:"flex",justifyContent:"center",py:"15px"}}>
                 <Box sx={{bgcolor:"#1a1a1a14",width:"100%",textAlign:"center",py:"20px"}}>
                     <Typography fontSize={"30px"} fontWeight={600} color={"#5F656C"}>1994</Typography>
                     <Typography fontSize={"12px"} letterSpacing={1}>ESTABLISHED</Typography>

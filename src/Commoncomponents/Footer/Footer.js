@@ -15,7 +15,7 @@ function Footer() {
         <Container maxWidth="lg">
             <Box py={10}>
              <Grid container item spacing={3} xs={12}>
-               <Grid item xs={12} sm={4} lg={4}>
+               <Grid item xs={12} sm={4.9} lg={4.9}>
                 <Box textAlign={"start"} paddingRight={5}>
                     <img src={logo}/>
                     <Typography sx={{pr:"10px",pt:"30px"}} fontSize={"14px"} color={"white"}>Ornare eget varius aliquet vehicula fermentum commodo, dolor, dolor amet, ut velit lacus cursus et, tortor mollis lacus lectus aliquam velit justo nibh fermentum fermentum.</Typography>
@@ -28,45 +28,45 @@ function Footer() {
                 </Box>
 
                </Grid>
-               <Grid item xs={12} sm={2} lg={2}>
+               <Grid item xs={12} sm={2.36} lg={2.36}>
                 <Box textAlign={"start"}>
                   <Box>
-                    <Typography sx={{fontSize:"24px",fontFamily:"Poppins, sans-serif",color:"white"}}>Quick Link</Typography>
+                    <Typography sx={{fontSize:{lg:"24px",sm:"15px"},fontFamily:"Poppins, sans-serif",color:"white"}}>Quick Link</Typography>
                   </Box>
                   <Box py={5}>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/")}>Home</Typography>
-                    <Typography  sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() =>navigate("/About")}>About Us</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/works")}>Our Work</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Services")}>Our Services</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Contact")}>Contact Us</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Get A Quote</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/")}>Home</Typography>
+                    <Typography  sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() =>navigate("/About")}>About Us</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/works")}>Our Work</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Services")}>Our Services</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}} onClick={() => navigate("/Contact")}>Contact Us</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Get A Quote</Typography>
                   </Box>
                 </Box>
                </Grid>
-               <Grid item xs={12} sm={3} lg={3}>
+               <Grid item xs={12} sm={2.36} lg={2.36}>
                <Box  textAlign={"start"}>
                   <Box>
-                    <Typography sx={{fontSize:"24px",fontFamily:"Poppins, sans-serif",color:"white"}}>Our Capibility</Typography>
+                    <Typography sx={{fontSize:{lg:"24px",sm:"15px"},fontFamily:"Poppins, sans-serif",color:"white"}}>Our Capibility</Typography>
                   </Box>
                   <Box py={5}>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Full-Service Production</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Event Management</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Food & Beverages</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Live Performances</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Destination Management</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Company Picnic</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Full-Service Production</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Event Management</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Food & Beverages</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Live Performances</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Destination Management</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white",cursor:"pointer","&:hover":{color:"#de463b"}}}>Company Picnic</Typography>
                   </Box>
                 </Box>
                </Grid>
-               <Grid item xs={12} sm={3} lg={3}>
+               <Grid item xs={12} sm={2.36} lg={2.36}>
                <Box  textAlign={"start"}>
                   <Box>
-                    <Typography sx={{fontSize:"24px",fontFamily:"Poppins, sans-serif",color:"white"}}>Contact Info</Typography>
+                    <Typography sx={{fontSize:{lg:"24px",md:"15px"},fontFamily:"Poppins, sans-serif",color:"white"}}>Contact Info</Typography>
                   </Box>
                   <Box py={5} >
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white"}}>Trafalgar Square, Charing Cross, London WC2N 5DN, United Kingdom.</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white"}}>+44 123 456 7890</Typography>
-                    <Typography sx={{fontSize:"14px",lineHeight:"25px",color:"white"}}>info@example.com</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white"}}>Trafalgar Square, Charing Cross, London WC2N 5DN, United Kingdom.</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white"}}>+44 123 456 7890</Typography>
+                    <Typography sx={{fontSize:{lg:"14px",sm:"12px"},lineHeight:"25px",color:"white"}}>info@example.com</Typography>
                    
                   </Box>
                 </Box>

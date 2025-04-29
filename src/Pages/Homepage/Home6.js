@@ -45,16 +45,16 @@ function Home6() {
         <Container maxWidth="lg">
         <Box>
           <Box>
-            <Typography sx={{ fontSize: "12px", fontFamily: "Poppins, sans-serif", color: "#de463b", fontWeight: "600", letterSpacing: "2px" }}>OUR SERVICES</Typography>
+            <Typography sx={{ fontSize: "12px", fontFamily: "Poppins, sans-serif", color: "#de463b", fontWeight: "600", letterSpacing: "2px",textAlign:"center" }}>OUR SERVICES</Typography>
           </Box>
           <Box sx={{pt:"10px"}}>
-            <Typography sx={{ fontSize: "34px", fontFamily: "Poppins, sans-serif", fontWeight: "600" }}>Corporate Event Management</Typography>
+            <Typography sx={{ fontSize: "34px", fontFamily: "Poppins, sans-serif", fontWeight: "600",textAlign:"center" }}>Corporate Event Management</Typography>
           </Box>
           <Box py={2}>
             <Typography color={"#5F656C"} fontSize={"14px"} textAlign={"center"}>Orci, gravida at dolor penatibus praesent. Id ac nunc nunc elementum vitae nunc cursus. Nunc cras facilisis fermentum elementum, suspendisse augue dolor.</Typography>
           </Box>
-          <Box py={3}>
-            <Button sx={{ border: "1px solid lightgray", color: "black", fontSize: "12px", letterSpacing: "2px", fontWeight: "600", px: "10px", }}>View All Services</Button>
+          <Box py={3} display={"flex"} justifyContent={"center"}>
+           <Button variant='outlined' sx={{ marginBottom: "10px",borderColor:"#000", backgroundColor: "#ffff", color: "black", padding: "7px 15px",textTransform:"capitalize", borderRadius: "10px", "&:hover": { backgroundColor: "#000", borderColor: "#fff",color:"#fff" }, transition: ".7s" }}>Book A Service</Button>
           </Box>
         </Box>  
           <Box py={5}>

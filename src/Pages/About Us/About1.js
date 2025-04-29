@@ -6,8 +6,8 @@ import Header from '../../Commoncomponents/Header/Header'
 function About1() {
     return (
              
-                <Box sx={{backgroundImage:`linear-gradient(rgba(48, 44, 44, 0.7),rgba(60, 57, 39, 0.7)),url(${AboutImg})`,width:"100%",backgroundPosition:"center",
-                backgroundSize:"cover",backgroundRepeat:"no-repeat"}}>
+                <Box sx={{backgroundImage:`linear-gradient(rgba(48, 44, 44, 0.7),rgba(47, 47, 45, 0.7)),url(${AboutImg})`,width:"100%",backgroundPositionX:"center",
+                backgroundSize:"cover",backgroundRepeat:"no-repeat",backgroundPositionY:"bottom"}}>
                   <Header />
                     <Container maxWidth="lg">
                         <Box sx={{paddingTop:"180px",paddingBottom:"150px"}}>

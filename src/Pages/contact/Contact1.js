@@ -134,14 +134,14 @@ function Contact1() {
                          <TextField fullWidth id="outlined-multiline-static" sx={{width: '100%', backgroundColor: 'white','& .MuiInputBase-input': {color: 'black'}, '& .MuiInputBase-root': { height: 'auto',color:"#BCBCBC"}}} multiline rows={4} placeholder=' Your message.....'/>
                            </Box>
 
-                           <Button variant="outlined" sx={{marginLeft:"30px",marginTop:"30px",marginBottom:"30px",fontWeight:"600",borderColor:"white",color:"black","&:hover":{borderColor:"#1A1A1A",backgroundColor:"#1A1A1A"}}}>submit</Button>
+                           <Button variant="outlined" sx={{marginLeft:"30px",marginTop:"30px",marginBottom:"30px",fontWeight:"600",border:'none',letterSpacing:"4px",color:"white","&:hover":{borderColor:"#1A1A1A",backgroundColor:"#DE463B",color:"#fff"}}}>submit</Button>
 
                     </Box>     
                    
             </Grid>
             <Grid item xs={12} sm={8} md={6} lg={6} sx={{display:"flex",justifyContent:"center"}} py={5}>    
                     <Box sx={{width:"570px",height:"580px"}}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.4152485120226!2d72.88343388621999!3d21.215376131029682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f155c0ad929%3A0x97b93382aed70c3a!2sJBS%20IT%20Institute!5e0!3m2!1sen!2sin!4v1723196489259!5m2!1sen!2sin" width={"100%"} height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8336938309185!2d72.8881183!3d21.2382425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f5100c5afcd%3A0xf0c8c348ba866c82!2sAmbika%20Pinnacle!5e1!3m2!1sen!2sin!4v1745840796781!5m2!1sen!2sin" width="600" height="580"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </Box>
             </Grid>
            

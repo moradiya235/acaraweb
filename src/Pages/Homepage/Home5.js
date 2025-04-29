@@ -36,10 +36,10 @@ function Home5() {
     <Box py={5}>
         <Container maxWidth="lg">
            <Box py={1}>
-              <Typography sx={{ fontSize: "12px", fontFamily: "Poppins, sans-serif", color: "#de463b", fontWeight: "600", letterSpacing: "2px" }}>TESTIMONIAL</Typography>
+              <Typography sx={{ fontSize: "12px", fontFamily: "Poppins, sans-serif", color: "#de463b", fontWeight: "600", letterSpacing: "2px",textAlign:"center" }}>TESTIMONIAL</Typography>
            </Box>
            <Box py={1}>
-              <Typography sx={{ fontSize: "34px", fontFamily: "Poppins, sans-serif", fontWeight: "600" }}>What Our Client Say</Typography>
+              <Typography sx={{ fontSize: "34px", fontFamily: "Poppins, sans-serif", fontWeight: "600",textAlign:'center' }}>What Our Client Say</Typography>
            </Box>
            <Box py={1}>
             <Typography color={"#5F656C"} fontSize={"15px"} textAlign={"center"}>Lobortis arcu at suspendisse arcu egestas lectus purus magna interdum aliquam scelerisque.</Typography>
@@ -57,7 +57,7 @@ function Home5() {
                          <Typography><FormatQuoteIcon sx={{color:"#de463b",fontSize:"34px",transform:"rotate(180deg)"}}/></Typography>
                          <Typography sx={{fontSize:"15px",color:"#5F656C",pt:"10px",}}>{item.title}</Typography>
                          <Typography sx={{fontSize:"12px" ,fontWeight:"600",fontFamily:"Poppins, sans-serif",letterSpacing:"2px",pt:"10px"}}>{item.name}</Typography>
-                         </Box>
+                        </Box>
                     </Box>
                   </Box>
               </Grid>

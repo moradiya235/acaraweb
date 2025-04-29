@@ -25,10 +25,10 @@ function Services2() {
 
 
                                    <Box py={3}>
-                                          <Grid item xs={12} container sx={{ display: "flex", justifyContent: { md: "center", sm: "center" } }}>
+                                          <Grid item xs={12} container sx={{ display: "flex",py:3, justifyContent: { md: "center", sm: "center" } }}>
 
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" },py:"10px" }}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>01 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Initial Inquiry</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Feugiat netus vitae dui, mi sed amet eu sem pharetra senectus id blandit dictum urna est morbi tempus, auctor sed egestas condimentum neque donec.</Typography>
@@ -36,7 +36,7 @@ function Services2() {
                                                         </Box>
                                                  </Grid>
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } ,py:"10px"}}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>02 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Pre-Production</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Nec ac enim purus arcu suspendisse tortor nunc bibendum justo nibh varius ipsum lorem in id diam faucibus posuere laoreet ultrices lacus nisi, cursus.</Typography>
@@ -44,7 +44,7 @@ function Services2() {
                                                         </Box>
                                                  </Grid>
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } ,py:"10px"}}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>03 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Walktrough</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Vitae cursus libero, nec venenatis, semper sit morbi convallis ac, egestas turpis est ornare vitae arcu velit senectus est sed eget vitae lectus amet.</Typography>
@@ -55,20 +55,18 @@ function Services2() {
                                           </Grid>
 
 
-                                          <Grid item xs={12} container sx={{ display: "flex", paddingTop: "60px", justifyContent: { md: "center", sm: "center" } }}>
+                                          <Grid item xs={12} container sx={{ display: "flex",py:3, justifyContent: { md: "center", sm: "center" } }}>
 
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" },py:"10px" }}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>04 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Quote</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Feugiat netus vitae dui, mi sed amet eu sem pharetra senectus id blandit dictum urna est morbi tempus, auctor sed egestas condimentum neque donec.</Typography>
 
-
-
-                                                        </Box>
+                                                         </Box>
                                                  </Grid>
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" },py:"10px" }}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>05 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Production</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Nec ac enim purus arcu suspendisse tortor nunc bibendum justo nibh varius ipsum lorem in id diam faucibus posuere laoreet ultrices lacus nisi, cursus.</Typography>
@@ -76,7 +74,7 @@ function Services2() {
                                                         </Box>
                                                  </Grid>
                                                  <Grid item xs={12} sm={4}>
-                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" } }}>
+                                                        <Box sx={{ "&:hover": { backgroundColor: "#F1F3F2" },py:"10px" }}>
                                                                <Typography sx={{ paddingLeft: "20px", paddingTop: "30px", color: "#E2564D", fontSize: "14px", fontWeight: "600" }}>06 .</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", borderLeft: "2px solid red", marginTop: "5px", marginBottom: "10px", fontSize: "20px", fontWeight: "600" }}>Deliver</Typography>
                                                                <Typography sx={{ paddingLeft: "20px", paddingRight: "15px", color: "#1A1A1A", lineHeight: "26px", fontSize: "15px" }}>Vitae cursus libero, nec venenatis, semper sit morbi convallis ac, egestas turpis est ornare vitae arcu velit senectus est sed eget vitae lectus amet.</Typography>
