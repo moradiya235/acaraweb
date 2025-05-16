@@ -19,7 +19,7 @@ function Home1() {
               </Grid> 
               <Grid item xs={12} sm={6}>
                  <Box>
-                    <Typography sx={{fontSize:"48px",textAlign:"start",fontWeight:"600",color:"white",lineHeight:"60px",fontFamily:"Poppins,sans-serif"}}>The UK’s Best Event Management Agency for Corporate</Typography>
+                    <Typography sx={{fontSize:{lg:"48px" ,sm:"30px",xs:"25px"},textAlign:"start",fontWeight:"600",color:"white",lineHeight:"60px",fontFamily:"Poppins,sans-serif"}}>The UK’s Best Event Management Agency for Corporate</Typography>
                     <Typography sx={{textAlign:"start",color:"white",lineHeight:"30px",py:"10px"}}>A integer hac in id. Mollis consequat, consectetur egestas in quam. Id velit eleifend tincidunt varius sagittis sed ut. Pretium, risus ac augue arcu ullamcorper semper integer.</Typography>
                     <Box display={"flex"} justifyContent={"start"} py={3}>
                     <Button variant='outlined' sx={{ marginBottom: "20px", backgroundColor: "#ffff", color: "black", padding: "7px 15px",border:"none",textTransform:"capitalize", borderRadius: "10px", "&:hover": { backgroundColor: "#DE463B", borderColor: "#fff",color:"#fff" }, transition: ".7s" }}>Book Now</Button>

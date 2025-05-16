@@ -20,7 +20,7 @@ function Home2() {
                   <Typography variant='h6' color={"#de463b"} fontFamily={"Poppins, sans-serif"} textTransform={"uppercase"} fontSize={"14px"} letterSpacing={1}>About Us</Typography>
                 </Box>
                 <Box py={1}>
-                  <Typography fontSize={"32px"} fontFamily={"Poppins, sans-serif"} fontWeight={600}>We Help Corporate to Manage Event</Typography>
+                  <Typography fontSize={{lg:"32px",sm:"30px",xs:"25px"}} fontFamily={"Poppins, sans-serif"} fontWeight={600}>We Help Corporate to Manage Event</Typography>
                 </Box>
                 <Box py={1}>
                   <Typography color={"#5F656C"}>Sit vestibulum nec nam porttitor nibh. Urna at faucibus aliquet dolor. Facilisis id diam pellentesque et odio. Potenti sagittis massa lorem arcu sed diam. Consectetur elit sit in donec vitae blandit tincidunt eu. Sed nulla vel diam commodo. Placerat cursus sed blandit eu odio.</Typography>

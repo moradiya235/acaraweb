@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [anchorElHome, setAnchorElHome] = useState(null); // State to manage the "Home" sub-menu
+  const [anchorElHome, setAnchorElHome] = useState(null); 
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -24,16 +24,21 @@ function Header() {
 
   const navigate = useNavigate();
 
-  const menuItems = ['Works', 'Services', 'About', 'Contact'];
-
+  
+  const menuItems = [
+    { label: 'Works', path: '/works' },
+    { label: 'Services', path: '/Services' },
+    { label: 'About Us', path: '/About' },
+    { label: 'Contact', path: '/Contact' }
+  ];
   const drawerList = (
     <Box
-      sx={{ width: '100%', height: '100%', bgcolor: '#EDEDED'}} // Full-screen drawer with background
+      sx={{ width: '100%', height: '100%', bgcolor: '#EDEDED',zIndex:99}}
       role="presentation"
       onClick={toggleDrawer}
       onKeyDown={toggleDrawer}
     >
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', padding: 2 ,bgcolor:"transparent"}}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', padding: 2 ,background:"Transparent"}}>
         <img src={logo} alt="Logo" style={{ height: '50px', objectFit: 'contain' }} />
         <IconButton onClick={toggleDrawer} sx={{ color: 'white' }}>
           <CloseIcon />
@@ -42,13 +47,17 @@ function Header() {
       <List>
         <ListItem disablePadding>
           <ListItemButton onClick={handleHomeClick}>
-            <ListItemText primary="Home" sx={{ textAlign: 'start' }} />
+            <ListItemText primary="Home" onClick={() => navigate('/')} sx={{ textAlign: 'start' }} />
           </ListItemButton>
+          
         </ListItem>
-        {menuItems.map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} sx={{ textAlign: 'start' }} />
+        {menuItems.map((item) => (
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton onClick={() => {
+              toggleDrawer();
+              navigate(item.path);
+            }}>
+              <ListItemText primary={item.label} sx={{ textAlign: 'start' }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -107,7 +116,7 @@ function Header() {
         open={drawerOpen}
         onClose={toggleDrawer}
         PaperProps={{
-          sx: { width: '100%', height: '100%' },
+          sx: { width: '100%', height: '100%'},
         }}
       >
         {drawerList}
