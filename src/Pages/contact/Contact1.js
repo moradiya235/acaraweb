@@ -94,54 +94,50 @@ function Contact1() {
                                  
 
 
-       <Grid item xs={12}  container sx={{display:"flex",width:"100%",paddingTop:"50px",justifyContent:"center"}}>
-            <Grid item xs={12} sm={8} md={6} lg={6} sx={{display:"flex",justifyContent:"center"}} py={5}>
+       <Grid item xs={12} container sx={{display:"flex",width:"100%",paddingTop:"50px",justifyContent:"center",py:5,mb:5}}>
+            <Grid item xs={12} sm={6} md={6} lg={6} sx={{display:"flex",justifyContent:"center",backgroundColor:"#000"}} py={5}>
            
-                    <Box sx={{ width:"100%",backgroundColor:"black",height:"100%"}}>
-                         <Box sx={{display:"flex",marginLeft:"30px",marginTop:"30px",marginRight:"30px"}}>
-                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Name</Typography>
-                          <Typography sx={{color:"red",fontSize:"15px",paddingLeft:"5px"}}> * </Typography>
+                    <Box sx={{ width:"100%",height:"80%",py:4,px:5}}>
+                         <Box sx={{py:1}}>
+                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Name <span style={{color:"red"}}>*</span></Typography>
                          </Box>
 
-                         <Box sx={{marginLeft:"30px",marginRight:"30px"}} >
+                         <Box sx={{}} >
                          <TextField fullWidth placeholder="Full name" id="fullWidth" sx={{ backgroundColor: "white", height: '40px','& .MuiInputBase-root': {height: '100%'}}}/>
                            </Box>
 
-                           <Box sx={{display:"flex",marginLeft:"30px",marginTop:"30px",marginRight:"30px"}}>
-                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Company </Typography>
-                          <Typography sx={{color:"red",fontSize:"15px",paddingLeft:"5px"}}> * </Typography>
+                           <Box sx={{py:1}}>
+                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Company <span style={{color:"red"}}>*</span></Typography>
                          </Box>
 
-                         <Box sx={{marginLeft:"30px",marginRight:"30px"}} >
+                         <Box sx={{}} >
                          <TextField fullWidth placeholder="Company name" id="fullWidth" sx={{ backgroundColor: "white", height: '40px','& .MuiInputBase-root': {height: '100%'}}}/>
                            </Box>
 
-                           <Box sx={{display:"flex",marginLeft:"30px",marginTop:"30px",marginRight:"30px"}}>
-                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Email address</Typography>
-                          <Typography sx={{color:"red",fontSize:"20px",paddingLeft:"5px"}}> * </Typography>
+                           <Box sx={{py:1}}>
+                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Email address <span style={{color:"red"}}>*</span></Typography>
                          </Box>
 
-                         <Box sx={{marginLeft:"30px",marginRight:"30px"}}>
+                         <Box sx={{}}>
                          <TextField fullWidth placeholder="Email address" id="fullWidth" sx={{ backgroundColor: "white", height: '40px','& .MuiInputBase-root': {height: '100%'}}}/>
                            </Box>
 
-                           <Box sx={{display:"flex",marginLeft:"30px",marginTop:"30px",marginRight:"30px"}}>
-                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Message</Typography>
-                          <Typography sx={{color:"red",fontSize:"20px",paddingLeft:"5px"}}> * </Typography>
+                           <Box sx={{py:1}}>
+                          <Typography sx={{color:"#5F656C",fontSize:"15px",fontWeight:"600"}}>Message <span style={{color:"red"}}>*</span></Typography>
                          </Box>
 
-                         <Box sx={{marginLeft:"30px",marginRight:"30px"}}>
+                         <Box sx={{}}>
                          <TextField fullWidth id="outlined-multiline-static" sx={{width: '100%', backgroundColor: 'white','& .MuiInputBase-input': {color: 'black'}, '& .MuiInputBase-root': { height: 'auto',color:"#BCBCBC"}}} multiline rows={4} placeholder=' Your message.....'/>
                            </Box>
 
-                           <Button variant="outlined" sx={{marginLeft:"30px",marginTop:"30px",marginBottom:"30px",fontWeight:"600",border:'none',letterSpacing:"4px",color:"white","&:hover":{borderColor:"#1A1A1A",backgroundColor:"#DE463B",color:"#fff"}}}>submit</Button>
+                           <Button variant="outlined" sx={{marginTop:"30px",marginBottom:"30px",fontWeight:"600",border:'none',letterSpacing:"4px",color:"white","&:hover":{borderColor:"#1A1A1A",backgroundColor:"#DE463B",color:"#fff"}}}>submit</Button>
 
                     </Box>     
                    
             </Grid>
-            <Grid item xs={12} sm={8} md={6} lg={6} sx={{display:"flex",justifyContent:"center"}} py={5}>    
-                    <Box sx={{width:"570px",height:"580px"}}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8336938309185!2d72.8881183!3d21.2382425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f5100c5afcd%3A0xf0c8c348ba866c82!2sAmbika%20Pinnacle!5e1!3m2!1sen!2sin!4v1745840796781!5m2!1sen!2sin" width="600" height="580"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <Grid item xs={12} sm={6} md={6} lg={6} sx={{display:"flex",justifyContent:"center"}}>    
+                    <Box sx={{width:"100%",height:"100%"}}>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8336938309185!2d72.8881183!3d21.2382425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f5100c5afcd%3A0xf0c8c348ba866c82!2sAmbika%20Pinnacle!5e1!3m2!1sen!2sin!4v1745840796781!5m2!1sen!2sin" width="100%" height="100%"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </Box>
             </Grid>
            
